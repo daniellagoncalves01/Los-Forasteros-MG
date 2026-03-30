@@ -7,38 +7,37 @@
 </head>
 <body>
 
-<div class="grid">
-    <div class="cell cell-1">
-        <img src="losforasteros.png">
+<div class="container">
+
+    <!-- TOPO -->
+    <div class="header">
+        <img src="losforasteros.jpg" class="logo">
+        <h1>Los Forasteros MG</h1>
+        <p>Irmandade • Respeito • Estrada</p>
     </div>
 
-    <div class="cell cell-2">
-        <video src="losforasteros1.mp4" autoplay loop muted playsinline></video>
+    <!-- BOTÕES -->
+    <div class="links">
+
+        <button onclick="mostrarConteudo('historia')"> Nossa História</button>
+        <button onclick="mostrarConteudo('integrantes')"> Integrantes</button>
+        <button onclick="mostrarConteudo('parceiro')"> Parceiros</button>
+        <button onclick="mostrarConteudo('musica')"> Nossa Música</button>
+        <button onclick="mostrarConteudo('contato')"> Fale Conosco</button>
+
     </div>
 
-    <div class="cell cell-3">
-        <h3>Opções</h3>
-
-        <ul>
-            <li><a href="#" onclick="mostrarConteudo('historia')">Nossa História</a></li>
-            <li><a href="#" onclick="mostrarConteudo('integrantes')">Integrantes</a></li>
-            <li><a href="#" onclick="mostrarConteudo('parceiro')">Parceiros</a></li>
-            <li><a href="#" onclick="mostrarConteudo('musica')">Nossa Música</a></li>
-        </ul>
-
-        <h3>Deseja entrar em contato?</h3>
-        <ul>
-            <li><a href="#" onclick="mostrarConteudo('contato')">Fale Conosco!</a></li>
-        </ul>
+    <!-- CONTEÚDO -->
+    <div id="conteudo" class="conteudo">
+        <h2>Bem-vindo</h2>
+        <p>Selecione uma opção</p>
     </div>
 
-    <div class="cell cell-4">
-        <div id="conteudo" class="conteudo">
-            <h2>Bem-vindo</h2>
-        </div>
-    </div>
 </div>
 
+<div class="video-footer">
+    <video src="losforasteros1.mp4" autoplay loop muted playsinline></video>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
