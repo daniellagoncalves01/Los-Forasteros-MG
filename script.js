@@ -126,10 +126,10 @@ function mostrarConteudo(tipo) {
         </audio>`;
     }
 
-    if (tipo === "Fale Conosco") {
+    if (tipo === "contato") {
         html += `
         <h2>Fale Conosco</h2>
-        <p>Aguarde o formulário
+        <p>Aguarde o formulário</p>
         <iframe src="https://forms.gle/YqLYTYQxmiD8WfNH8" width="100%" height="400"></iframe>`;
     }
 
@@ -141,19 +141,7 @@ function fecharConteudo() {
     document.body.style.overflow = "auto";
 }
 
-/* MÚSICA */
-const music = document.getElementById("bgMusic");
-const btn = document.getElementById("musicBtn");
 
-btn.onclick = () => {
-    if (music.paused) {
-        music.play();
-        btn.innerText = "⏸️";
-    } else {
-        music.pause();
-        btn.innerText = "🎵";
-    }
-};
 
 /* PWA */
 if ("serviceWorker" in navigator) {
