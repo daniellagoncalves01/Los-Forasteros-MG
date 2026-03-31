@@ -4,8 +4,6 @@ function mostrarConteudo(tipo) {
     conteudo.classList.add("ativo");
     document.body.style.overflow = "hidden";
 
-    if (navigator.vibrate) navigator.vibrate(50);
-
     let html = `<span class="fechar" onclick="fecharConteudo()">✖</span>`;
 
     if (tipo === "historia") {
@@ -115,12 +113,9 @@ function mostrarConteudo(tipo) {
         <p>O Bichon Frisé Motociclista</p>
     </div>`;
     }
-
     if (tipo === "musica") {
         html += `
         <h2>Nossa Música</h2>
-        
-        <p>Ouça nossa música oficial</p>
         <audio controls style="width:100%">
             <source src="musica.mp3">
         </audio>`;
@@ -129,7 +124,7 @@ function mostrarConteudo(tipo) {
     if (tipo === "contato") {
         html += `
         <h2>Fale Conosco</h2>
-        <p>Aguarde o formulário</p>
+        <p> Aguarde o formulário</p>
         <iframe src="https://forms.gle/YqLYTYQxmiD8WfNH8" width="100%" height="400"></iframe>`;
     }
 
@@ -141,9 +136,3 @@ function fecharConteudo() {
     document.body.style.overflow = "auto";
 }
 
-
-
-/* PWA */
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js");
-}
