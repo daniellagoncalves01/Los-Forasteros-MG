@@ -5,9 +5,18 @@
 }
 
 body {
-    font-family: 'Inter', Inter;
+    font-family: 'Poppins', Poppins;
     background: radial-gradient(circle at top, #1a1a1a, #000);
     color: white;
+    padding-bottom: 140px;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+body, button, p {
+    font-family: 'Inter', sans-serif;
 }
 
 /* CONTAINER */
