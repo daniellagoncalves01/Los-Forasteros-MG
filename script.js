@@ -136,6 +136,15 @@ function mostrarConteudo(tipo) {
         <p>Acesse o QR Code e confira!</p>
         </div>`;
     }
+
+    if (tipo === "instagram") {
+        html += `
+        <h2>Redes Sociais</h2>
+        <p> Confira Nossas redes sociais!</p>
+        <p> Instagram • @losforasteros_mg </p>
+        <p> Youtube • Los Forasteros Moto Grupo</p>
+        </div>`;
+    }
     conteudo.innerHTML = html;
 }
 function fecharConteudo() {
